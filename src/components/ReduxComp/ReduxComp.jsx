@@ -13,7 +13,7 @@ const ReduxComp = () => {
       dispatch(
         messagesActions.addNewMsg(`${Math.random().toFixed(2)} new msg`)
       );
-    }, 100);
+    }, 500);
   }, [dispatch]);
   //
   return (

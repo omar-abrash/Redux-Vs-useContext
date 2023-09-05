@@ -15,7 +15,7 @@ const ContextComp = () => {
   useEffect(() => {
     setInterval(() => {
       addNewMsg();
-    }, 100);
+    }, 500);
   }, [addNewMsg]);
   //
   return (
