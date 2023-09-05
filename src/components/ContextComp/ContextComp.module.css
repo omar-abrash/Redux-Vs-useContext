@@ -11,3 +11,9 @@
   margin: 0;
   padding: 0;
 }
+
+.main li {
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
