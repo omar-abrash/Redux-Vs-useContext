@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { useContext, useEffect, useCallback } from "react";
 import { messagesContext } from "../../context/context";
 
@@ -9,13 +9,18 @@ const ContextComp = () => {
   const messages = msgCtx.messages;
   //   console.log(messages);
   const addNewMsg = useCallback(() => {
-    msgCtx.addNewMsg(`${Math.random().toFixed(2)} new msg`);
+    msgCtx.addNewMsg({
+      message: `${Math.random().toFixed(2)} new msg`,
+      id: Math.random(),
+    });
   }, []); // to fix this function
   //
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
       addNewMsg();
-    }, 500);
+    }, 200);
+
+    return () => clearInterval(interval);
   }, [addNewMsg]);
   //
   return (
@@ -23,7 +28,7 @@ const ContextComp = () => {
       <h1>Context</h1>
       <ul>
         {messages.map((msg) => (
-          <li key={Math.random()}>{msg}</li>
+          <li key={msg.id}>{msg.message}</li>
         ))}
       </ul>
     </div>

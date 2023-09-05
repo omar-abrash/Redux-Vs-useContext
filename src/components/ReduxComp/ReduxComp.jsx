@@ -9,11 +9,15 @@ const ReduxComp = () => {
   const dispatch = useDispatch();
   //
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
       dispatch(
-        messagesActions.addNewMsg(`${Math.random().toFixed(2)} new msg`)
+        messagesActions.addNewMsg({
+          message: `${Math.random().toFixed(2)} new msg`,
+          id: Math.random(),
+        })
       );
-    }, 500);
+    }, 200);
+    return () => clearInterval(interval);
   }, [dispatch]);
   //
   return (
@@ -21,7 +25,7 @@ const ReduxComp = () => {
       <h1>Redux</h1>
       <ul>
         {messages.map((msg) => (
-          <li key={Math.random()}>{msg}</li>
+          <li key={msg.id}>{msg.message}</li>
         ))}
       </ul>
     </div>
