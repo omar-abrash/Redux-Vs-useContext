@@ -1,0 +1,13 @@
+.main {
+  width: 50%;
+  background-color: #a56bfd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main ul {
+  margin: 0;
+  padding: 0;
+}
