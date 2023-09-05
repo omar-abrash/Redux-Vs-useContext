@@ -20,7 +20,7 @@ const ContextComp = () => {
   //
   return (
     <div className={classes.main}>
-      <h1>Context API</h1>
+      <h1>Context</h1>
       <ul>
         {messages.map((msg) => (
           <li key={Math.random()}>{msg}</li>
