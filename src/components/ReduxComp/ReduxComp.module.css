@@ -1,6 +1,6 @@
 .main {
   width: 50%;
-  background-color: #8d5dff;
+  background-color: #9074ff;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -19,5 +19,9 @@
 }
 
 .main li:nth-child(odd) {
-  background-color: aqua;
+  background-color: #92fa75;
+}
+
+.main li:nth-child(even) {
+  background-color: #fff764;
 }

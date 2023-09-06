@@ -12,7 +12,7 @@ const ReduxComp = () => {
     const interval = setInterval(() => {
       dispatch(
         messagesActions.addNewMsg({
-          message: `${Math.random().toFixed(2)} new msg`,
+          message: `${Math.random().toFixed(1) * 100} new msg`,
           id: Math.random(),
         })
       );

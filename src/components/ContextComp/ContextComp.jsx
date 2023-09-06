@@ -10,7 +10,7 @@ const ContextComp = () => {
   //   console.log(messages);
   const addNewMsg = useCallback(() => {
     msgCtx.addNewMsg({
-      message: `${Math.random().toFixed(2)} new msg`,
+      message: `${Math.random().toFixed(1) * 100} new msg`,
       id: Math.random(),
     });
   }, []); // to fix this function
