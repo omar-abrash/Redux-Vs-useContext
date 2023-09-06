@@ -16,7 +16,7 @@ const ReduxComp = () => {
           id: Math.random(),
         })
       );
-    }, 200);
+    }, 20);
     return () => clearInterval(interval);
   }, [dispatch]);
   //

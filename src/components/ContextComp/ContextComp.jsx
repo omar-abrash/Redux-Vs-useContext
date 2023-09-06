@@ -18,7 +18,7 @@ const ContextComp = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       addNewMsg();
-    }, 200);
+    }, 20);
 
     return () => clearInterval(interval);
   }, [addNewMsg]);

@@ -3,7 +3,7 @@
   background-color: #8d5dff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -16,4 +16,8 @@
   padding: 5px 20px;
   margin-bottom: 10px;
   border: 1px solid black;
+}
+
+.main li:nth-child(odd) {
+  background-color: aqua;
 }

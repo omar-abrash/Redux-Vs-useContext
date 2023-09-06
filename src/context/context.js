@@ -8,7 +8,7 @@ const messagesContext = createContext({
 const MessagesContextProvider = (props) => {
   const [messages, setMessages] = useState([]);
   const addNewMsg = (newMsg) => {
-    setMessages((prevState) => [...prevState, newMsg]);
+    setMessages((prevState) => [newMsg, ...prevState]);
   };
   //
   const values = {
