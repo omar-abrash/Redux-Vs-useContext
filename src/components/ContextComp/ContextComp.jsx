@@ -25,10 +25,12 @@ const ContextComp = () => {
   //
   return (
     <div className={classes.main}>
-      <div className={classes.number}>Messages Num : {messages.length}</div>
-
       <div>
         <h1>Context</h1>
+        <div className={classes.number}>Messages Num : {messages.length}</div>
+      </div>
+
+      <div>
         <ul>
           {messages.map((msg) => (
             <li key={msg.id}>{msg.message}</li>

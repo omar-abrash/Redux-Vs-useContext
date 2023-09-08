@@ -12,13 +12,13 @@ import classes from "./LayOut.module.css";
 const LayOut = () => {
   return (
     <div className={classes.main}>
-      <Provider store={store}>
-        <ReduxComp />
-      </Provider>
-
       <MessagesContextProvider>
         <ContextComp />
       </MessagesContextProvider>
+
+      <Provider store={store}>
+        <ReduxComp />
+      </Provider>
     </div>
   );
 };
