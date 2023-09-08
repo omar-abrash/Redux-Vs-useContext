@@ -22,7 +22,7 @@ const ReduxComp = () => {
   //
   return (
     <div className={classes.main}>
-      <div className={classes.number}>Messages Number : {messages.length}</div>
+      <div className={classes.number}>Messages Num : {messages.length}</div>
 
       <div>
         <h1>Redux</h1>
