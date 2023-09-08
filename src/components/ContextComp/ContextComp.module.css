@@ -3,8 +3,13 @@
   background-color: #66c7ff;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+}
+
+.number {
+  font-weight: 500;
+  margin-top: 20px;
 }
 
 .main ul {
